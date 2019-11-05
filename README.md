@@ -28,3 +28,9 @@ Quviq QuickCheck Mini is installed successfully.”
 /usr/local/Cellar/erlang/18.1/lib/erlang/lib/eqc-2.01.0/doc/index.html.
 :ok
 ```
+
+## Running
+
+`mix test`
+
+Inside `test/lists_eqc_test.exs` are the test(s). The commented out one will fail so you can see the responses from QuickCheck. I also have it that the generated values are inspected so you can see all the permutations that QuickCheck came up with up to 100. You can change that however by changing `@tag numtests: [n]` to as many as you want.
